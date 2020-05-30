@@ -1,8 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import GifPlayer from 'react-gif-player';
-
+const GifPlayer = React.lazy(() => import('react-gif-player'));
 export default function Projects(props) {
+	const isSSR = typeof window === 'undefined';
+
 	const { site, allFile } = useStaticQuery(graphql`
 		query ProjectsQuery {
 			site {
@@ -41,12 +42,16 @@ export default function Projects(props) {
 						<h4 className='text-base font-semibold'>{project.title}</h4>
 						<p>{project.description}</p>
 						<div className='w-full text-center'>
-							{project.image && (
-								<GifPlayer
-									autoplay={true}
-									className='mx-auto'
-									gif={imageGif?.node?.publicURL}
-								/>
+							{!isSSR && (
+								<React.Suspense fallback={<div />}>
+									{project.image && (
+										<GifPlayer
+											autoplay={true}
+											className='mx-auto'
+											gif={imageGif?.node?.publicURL}
+										/>
+									)}
+								</React.Suspense>
 							)}
 						</div>
 						<div className='links flex justify-center w-full my-2'>
