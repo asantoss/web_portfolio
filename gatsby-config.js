@@ -65,7 +65,7 @@ module.exports = {
 				background_color: fullConfig.theme.colors,
 				theme_color: fullConfig.theme.colors.teal['400'],
 				display: `minimal-ui`,
-				icon: `src/images/favicon.ico`,
+				icon: `src/images/favicon.png`,
 			},
 		},
 		{
