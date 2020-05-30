@@ -1,6 +1,6 @@
 # Alexander Santos Web Portfolio
 
-![alt text](https://image.ibb.co/jv6FC7/gatsby_starter_tailwind.png 'Screenshot of the portfolio homepage')
+![alt text](https://github.com/asantoss/web_portfolio/blob/master/src/images/Site%20Image.PNG 'Screenshot of the portfolio homepage')
 
 <p align="center">View demo <a href="https://alexsantos.dev/">here</a>.</p>
 
