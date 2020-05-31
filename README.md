@@ -15,7 +15,7 @@
 
 ### Netlify
 
-This is sight is deployes on netlify!
+This is site is deployed on netlify!
 
 ## Resources
 
