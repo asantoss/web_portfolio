@@ -39,12 +39,13 @@ export default function Header(props) {
 				<Img
 					className='rounded-full shadow-xl'
 					fixed={data.file.childImageSharp.fixed}
-					alt=''
+					alt="Author's portrait in black and white"
 				/>
 			</div>
 			<h1>Alexander Santos</h1>
 			<div className='links flex justify-between'>
 				<a
+					aria-label='Github Profile'
 					className='mx-2 hover:opacity-25'
 					target='_blank'
 					rel='noreferrer'
@@ -53,6 +54,7 @@ export default function Header(props) {
 					<FaGithub />
 				</a>
 				<a
+					aria-label='linkedIn Profile'
 					className='mx-2 hover:opacity-25'
 					target='_blank'
 					rel='noreferrer'
@@ -61,6 +63,7 @@ export default function Header(props) {
 					<FaLinkedin />
 				</a>
 				<a
+					aria-label='Resume PDF File'
 					className='mx-2 hover:opacity-25'
 					target='_blank'
 					rel='noreferrer'
