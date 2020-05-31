@@ -1,10 +1,49 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { useState } from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+function encode(data) {
+	return Object.keys(data)
+		.map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+		.join('&');
+}
+
 function ContactPage({ location }) {
+	const [values, setValues] = useState({
+		firstName: '',
+		lastName: '',
+		email: '',
+		message: '',
+	});
+	const handleSubmit = (e) => {
+		const { firstName, lastName, email, message } = values;
+		const form = e.target;
+		e.preventDefault();
+		fetch('/', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded',
+			},
+			body: encode({
+				'form-name': form.getAttribute('name'),
+				firstName,
+				lastName,
+				email,
+				message,
+			}),
+		})
+			.then(() => {
+				alert('Success!');
+				form.reset();
+			})
+			.catch((error) => alert(error));
+	};
+
+	const handleChange = (e) => {
+		setValues({ ...values, [e.target.name]: e.target.value });
+	};
 	return (
 		<Layout {...{ location }}>
 			<SEO
@@ -22,9 +61,9 @@ function ContactPage({ location }) {
 			/>
 			<section>
 				<form
+					onSubmit={handleSubmit}
 					className='mx-auto md:w-1/2'
 					name='contact'
-					method='POST'
 					data-netlify='true'>
 					<p className='mb-8 leading-loose text-gray-700 font-bold text-3xl'>
 						Send me an email.
@@ -37,6 +76,9 @@ function ContactPage({ location }) {
 					</label>
 
 					<input
+						name='firstName'
+						value={values.firstName}
+						onChange={handleChange}
 						className='w-full mb-6 form-input'
 						id='first-name'
 						placeholder='Bill'
@@ -50,9 +92,28 @@ function ContactPage({ location }) {
 					</label>
 
 					<input
+						name='lastName'
+						value={values.lastName}
+						onChange={handleChange}
 						className='w-full mb-6 form-input'
 						id='last-name'
 						placeholder='Murray'
+						type='text'
+					/>
+
+					<label
+						className='block mb-2 text-xs font-bold uppercase'
+						htmlFor='email'>
+						Email
+					</label>
+
+					<input
+						name='email'
+						value={values.email}
+						onChange={handleChange}
+						className='w-full mb-6 form-input'
+						id='email'
+						placeholder='BMurray@email.com'
 						type='text'
 					/>
 
@@ -63,7 +124,10 @@ function ContactPage({ location }) {
 					</label>
 
 					<textarea
-						className='w-full mb-6 form-textarea'
+						name='message'
+						value={values.message}
+						onChange={handleChange}
+						className='w-full mb-6 form-textarea text-gray-800'
 						id='message'
 						placeholder='Say something...'
 						rows='8'
