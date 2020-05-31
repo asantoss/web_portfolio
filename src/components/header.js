@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import TxtType from '../utils/typeWriter';
 import { FaGithub, FaLinkedin, FaBook } from 'react-icons/fa';
-export default function Header() {
+export default function Header(props) {
 	const types = [
 		'Software Developer.',
 		'Dog lover.',
@@ -32,7 +32,9 @@ export default function Header() {
 		}
 	}, []);
 	return (
-		<section className='text-center profile right-0 lg:left-0 bg-gray-900 h-screen fixed w-full lg:w-1/2 flex items-center justify-center text-5xl font-bold flex-col'>
+		<section
+			{...props}
+			className='text-center profile right-0 lg:left-0 bg-gray-900 h-screen fixed w-full lg:w-1/2 flex items-center justify-center text-5xl font-bold flex-col'>
 			<div className='mb-10 profile-picture'>
 				<Img
 					className='rounded-full shadow-xl'

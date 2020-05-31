@@ -6,13 +6,23 @@ import Menu from './menu';
 
 // eslint-disable-next-line react/prop-types
 function Layout({ children, location }) {
+	const handleClick = () => {
+		if (typeof window !== 'undefined') {
+			window.scrollTo({
+				top: window.innerHeight,
+				left: 100,
+				behavior: 'smooth',
+			});
+		}
+	};
 	return (
 		<div className='flex flex-col min-h-screen w-full font-sans bg-gray-900 text-white '>
 			<Menu location={location} />
 			<Header />
 			<div
-				style={{ top: '93vh' }}
-				className='fixed flex items-center w-full justify-center text-4xl lg:w-1/2 lg:right-0'>
+				onClick={handleClick}
+				style={{ top: '90vh' }}
+				className='fixed flex items-center w-full justify-center text-4xl lg:w-1/2 lg:right-0 cursor-pointer'>
 				<div>
 					<i className='scroll fas fa-chevron-down'></i>
 				</div>
