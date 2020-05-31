@@ -50,6 +50,7 @@ export default function Projects(props) {
 											autoplay={true}
 											className='mx-auto'
 											gif={imageGif?.node?.publicURL}
+											alt={`Animated gif for ${project.title}`}
 										/>
 									)}
 								</React.Suspense>
