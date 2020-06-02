@@ -64,7 +64,7 @@ export default function Projects(props) {
 								href={project.site}
 								target='_blank'
 								rel='noreferrer'>
-								<FaGithub className='mx-auto text-white h-full' />
+								<FaInternetExplorer className='mx-auto text-white h-full' />
 							</a>
 							<a
 								style={{ color: 'white' }}
@@ -73,7 +73,7 @@ export default function Projects(props) {
 								aria-label={`Site url for ${[project.title]}`}
 								target='_blank'
 								rel='noreferrer'>
-								<FaInternetExplorer className='mx-auto text-white h-full' />
+								<FaGithub className='mx-auto text-white h-full' />
 							</a>
 						</div>
 					</div>
