@@ -16,21 +16,21 @@ module.exports = {
 			{
 				title: 'Client Manager',
 				description: `
-			Client manager is a full stack application that makes creating invoices a breeze through our easy to use web app. This is a full stack application that uses a micro services architecture to tie it all together. Using an Express Server with PostgreSQL to serve our GraphQL api on Heroku, we connect our client side React all written in Typescript and hosted on Netlify. This approach allows our app to grow and be easier to test each component.`,
+			Client manager is a full stack application that makes creating invoices a breeze through our easy to use web app. This is a full stack application that uses a micro services architecture to tie it all together. Using an Express Server with PostgreSQL to serve our GraphQL api on Heroku, we connect our client side React all written in Typescript and hosted on Netlify. This approach allows our app to grow and allows isolated testing of each component.`,
 				site: `https://client-man.netlify.com/`,
 				repo: `https://github.com/asantoss/client-manager`,
 				image: `client-manager`,
 			},
 			{
 				title: 'JUST MUSIC',
-				description: `This project is a full stack project using NodeJS,GraphQL, ReactJS, & PostgresQL. It is a fully featured spotify web player where users can create rooms for their friends and listen together synchronized. This a group project that consisted of 4 individuals. I was in charge of creating the backend portion, using Express along with Socket.IO we were able to connect users of our React front end to share state between their players.`,
+				description: `This project is a full stack project using NodeJS,GraphQL, ReactJS, & PostgresQL. It is a fully featured spotify web player where users can create rooms for their friends and listen together synchronized. This a group project that consisted of 4 individuals. I was in charge of creating the backend portion, using Express along with Socket.IO we were able to connect users of our React front end to share state between their players and with other users.`,
 				site: `https://justmusic.live/`,
 				repo: `https://github.com/asantoss/JustMusic.live`,
 				image: `justMusic`,
 			},
 			{
 				title: 'TRIVIA DOM',
-				description: `This project is build entirely using React and is hosted on Firebase. With React trivia you can create a rooms and start a trivia game with your friends. Just create a room and invite your friends to join you. Everything is in realtime and you can send them questions and find out who's been studying! Using React's great data binding to the view our users update our Firestore documents to drive the game, meanwhile our React app is synchronized with our firestore document.`,
+				description: `This project is build entirely using React and is hosted on Firebase. With React trivia you can create a rooms and start a trivia game with your friends. Just create a room and invite your friends to join you. Everything is in realtime and you can send them questions and find out who's been studying! Using React's great data binding to the view, Our users update our Firestore documents to drive the game, meanwhile our React app is kept synchronized with our firestore document.`,
 				site: `https://react-trivia-project.web.app/`,
 				repo: `https://github.com/asantoss/reactTrivia`,
 				image: `trivia-dom`,
