@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { FaGithub, FaInternetExplorer } from 'react-icons/fa';
+import { FaGithub, FaGlobeAmericas } from 'react-icons/fa';
 const GifPlayer = React.lazy(() => import('react-gif-player'));
 export default function Projects(props) {
 	const isSSR = typeof window === 'undefined';
@@ -64,7 +64,7 @@ export default function Projects(props) {
 								href={project.site}
 								target='_blank'
 								rel='noreferrer'>
-								<FaInternetExplorer className='mx-auto text-white h-full' />
+								<FaGlobeAmericas className='mx-auto text-white h-full' />
 							</a>
 							<a
 								style={{ color: 'white' }}

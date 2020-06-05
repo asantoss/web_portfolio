@@ -34,7 +34,7 @@ export default function Header(props) {
 	return (
 		<section
 			{...props}
-			className='text-center profile right-0 lg:left-0 bg-gray-900 h-screen fixed w-full lg:w-1/2 flex items-center justify-center text-5xl font-bold flex-col'>
+			className='text-center profile right-0 lg:left-0 bg-gray-900 h-screen my-2 fixed w-full lg:w-1/2 flex items-center justify-center text-5xl font-bold flex-col'>
 			<div className='mb-10 profile-picture'>
 				<Img
 					className='rounded-full shadow-xl'
