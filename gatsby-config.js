@@ -9,7 +9,7 @@ module.exports = {
 		description: `Web Development portfolio`,
 		author: `@asantoss`,
 		// eslint-disable-next-line no-irregular-whitespace
-		about: `I'​m​ a full stack developer living in Atlanta with my wife and two beautiful doggos. I loves all things tech, my hobbies include building extravagant computers with crazy RGB and creating beautiful web applications that can fix everyday problems.I​’m​ experienced in
+		about: `I'​m​ a full stack developer living in Atlanta with my wife and two beautiful doggos. I loves all things tech, my hobbies include building extravagant computers with crazy RGB and dual boot configurations with Windows & Manjaro Linux. I also love creating beautiful web applications that can fix everyday problems.I​’m​ experienced in
     multiple web technologies including HTML/CSS, JavaScript, ReactJS,
     Node.JS GraphQL & PostgresQL. I also enjoy gaming and long park days with my dogs. I'm a Certified Full Stack Developer and I’m seeking employment in Atlanta.`,
 		projects: [
