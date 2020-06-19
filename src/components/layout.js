@@ -22,7 +22,7 @@ function Layout({ children, location }) {
 			<div
 				onClick={handleClick}
 				style={{ top: '90vh' }}
-				className='fixed flex items-center w-full justify-center text-4xl lg:w-1/2 lg:right-0 cursor-pointer'>
+				className='fixed flex items-center  w-full justify-center text-4xl lg:w-1/2 lg:right-0 cursor-pointer'>
 				<div>
 					<i className='scroll fas fa-chevron-down'></i>
 				</div>
