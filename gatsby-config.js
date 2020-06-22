@@ -14,6 +14,13 @@ module.exports = {
     Node.JS GraphQL & PostgresQL. I also enjoy gaming and long park days with my dogs. I'm a Certified Full Stack Developer and I’m seeking employment in Atlanta.`,
 		projects: [
 			{
+				title: 'Cultura Salon',
+				description: `This is a site for a small business in Atlanta. Using Gatsby and React I was able to create a very performant site. Since the site is using Gatsby we are taking advantage of Server Side Rendering we get phenomenal SEO.`,
+				site: `https://culturasalon.com/`,
+				repo: `https://github.com/asantoss/cultura-salon`,
+				image: `cultura-salon`,
+			},
+			{
 				title: 'Client Manager',
 				description: `
 			Client manager is a full stack application that makes creating invoices a breeze through our easy to use web app. This is a full stack application that uses a micro services architecture to tie it all together. Using an Express Server with PostgreSQL to serve our GraphQL api on Heroku, we connect our client side React all written in Typescript and hosted on Netlify. This approach allows our app to grow and allows isolated testing of each component.`,
