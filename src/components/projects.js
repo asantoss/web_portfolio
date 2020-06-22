@@ -36,7 +36,9 @@ export default function Projects(props) {
 				const imageGif =
 					project.image &&
 					allFile.edges.find(
-						(e) => e.node.name === project.image && e.node.extension === 'gif'
+						(e) =>
+							e.node.name === project.image &&
+							(e.node.extension === 'gif' || e.node.extension === 'png')
 					);
 				return (
 					<div className='text-sm my-20' key={i}>
@@ -47,6 +49,7 @@ export default function Projects(props) {
 								<React.Suspense fallback={<div />}>
 									{project.image && (
 										<GifPlayer
+											style={{ width: 320, height: 156 }}
 											autoplay={true}
 											className='mx-auto'
 											gif={imageGif?.node?.publicURL}

@@ -15,7 +15,7 @@ module.exports = {
 		projects: [
 			{
 				title: 'Cultura Salon',
-				description: `This is a site for a small business in Atlanta. Using Gatsby and React I was able to create a very performant site. Since the site is using Gatsby we are taking advantage of Server Side Rendering we get phenomenal SEO.`,
+				description: `This is a site for a small business in Atlanta. Using Gatsby and React I was able to create a very performant site with great SEO. These and other reasons led me down the path of choosing this stack for this site. The increase in load times was definitely important for this project and that was another reason to go with a static site generator like gatsby.`,
 				site: `https://culturasalon.com/`,
 				repo: `https://github.com/asantoss/cultura-salon`,
 				image: `cultura-salon`,
