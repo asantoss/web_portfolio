@@ -10,8 +10,8 @@ module.exports = {
 		author: `@asantoss`,
 		// eslint-disable-next-line no-irregular-whitespace
 		about: `I'​m​ a full stack developer living in Atlanta with my wife and two beautiful doggos. I loves all things tech, my hobbies include building extravagant computers with crazy RGB and dual boot configurations with Windows & Manjaro Linux. I also love creating beautiful web applications that can fix everyday problems.I​’m​ experienced in
-    multiple web technologies including HTML/CSS, JavaScript, ReactJS,
-    Node.JS GraphQL & PostgresQL. I also enjoy gaming and long park days with my dogs. I'm a Certified Full Stack Developer and I’m seeking employment in Atlanta.`,
+    multiple web technologies including HTML/CSS, JavaScript, ReactJS, VueJs, ASP.NET,
+    Node.JS GraphQL & PostgresQL. I also enjoy gaming and long park days with my dogs. I'm current a Front End Developer working for Netsoft Inc in Snellville, Ga.`,
 		projects: [
 			{
 				title: 'Cultura Salon',
@@ -29,18 +29,11 @@ module.exports = {
 				image: `client-manager`,
 			},
 			{
-				title: 'JUST MUSIC',
-				description: `This project is a full stack project using NodeJS,GraphQL, ReactJS, & PostgresQL. It is a fully featured spotify web player where users can create rooms for their friends and listen together synchronized. This a group project that consisted of 4 individuals. I was in charge of creating the backend portion, using Express along with Socket.IO we were able to connect users of our React front end to share state between their players and with other users.`,
-				site: `https://justmusic.live/`,
-				repo: `https://github.com/asantoss/JustMusic.live`,
-				image: `justMusic`,
-			},
-			{
-				title: 'TRIVIA DOM',
-				description: `This project is build entirely using React and is hosted on Firebase. With React trivia you can create a rooms and start a trivia game with your friends. Just create a room and invite your friends to join you. Everything is in realtime and you can send them questions and find out who's been studying! Using React's great data binding to the view, Our users update our Firestore documents to drive the game, meanwhile our React app is kept synchronized with our firestore document.`,
-				site: `https://react-trivia-project.web.app/`,
-				repo: `https://github.com/asantoss/reactTrivia`,
-				image: `trivia-dom`,
+				title: 'Brookhave Plus',
+				description: `This is a website for a small business in Brookhaven, GA. It is built with Nuxt using the VueJS framework.`,
+				site: `https://brookhavenplus.com/`,
+				repo: `https://github.com/asantoss/brookhavenplus`,
+				image: `bhplus`,
 			},
 		],
 	},
