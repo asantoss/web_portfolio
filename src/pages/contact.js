@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+/* eslint-disable  */
+import React, { useState, useRef, useEffect } from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -17,6 +17,13 @@ function ContactPage({ location }) {
 		email: '',
 		message: '',
 	});
+	const firstInput = useRef(null);
+	useEffect(() => {
+		if (firstInput.current) {
+			firstInput.current.scrollIntoView({ behavior: 'smooth' });
+			console.log('scrolled');
+		}
+	}, [firstInput]);
 	const handleSubmit = (e) => {
 		const { firstName, lastName, email, message } = values;
 		const form = e.target;
@@ -76,6 +83,7 @@ function ContactPage({ location }) {
 					</label>
 
 					<input
+						ref={firstInput}
 						name='firstName'
 						value={values.firstName}
 						onChange={handleChange}

@@ -8,7 +8,7 @@ export default function Header(props) {
 		'Software Developer.',
 		'Dog lover.',
 		'Creative problem solver.',
-		'Hire me!',
+		'Front End Developer @ Netsoft Inc',
 	];
 
 	const data = useStaticQuery(graphql`
