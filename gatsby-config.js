@@ -11,7 +11,7 @@ module.exports = {
 		// eslint-disable-next-line no-irregular-whitespace
 		about: `I'​m​ a full stack developer living in Atlanta with my wife and two beautiful doggos. I loves all things tech, my hobbies include building extravagant computers with crazy RGB and dual boot configurations with Windows & Manjaro Linux. I also love creating beautiful web applications that can fix everyday problems.I​’m​ experienced in
     multiple web technologies including HTML/CSS, JavaScript, ReactJS, VueJs, ASP.NET,
-    Node.JS GraphQL & PostgresQL. I also enjoy gaming and long park days with my dogs. I'm current a Front End Developer working for Netsoft Inc in Snellville, Ga.`,
+    Node.JS GraphQL & PostgresQL. I also enjoy gaming and long park days with my dogs. I'm currently a Front End Developer working for Netsoft Inc in Snellville, Ga.`,
 		projects: [
 			{
 				title: 'Cultura Salon',
